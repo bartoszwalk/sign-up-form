@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="left-main">
         <div class="logo-container"> 
             <img class="odin" src="images/odin-lined.png">
         </div>
+        <span class="credits">Photo by Redd F on Unsplash</span>
     </div>
     <div class="right-main">
         <div class="header">
-            <p>
+            <p class="header-text">
                 This is not a real online service! You know you need something
                 like this in your life to help you realise your deepest dreams.
                 Sign up now to get started<br></br>
@@ -24,12 +28,45 @@
 
         </div>
         <div class="main">
+            <form action="#">
+                <fieldset>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" required>
+
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" id="phone_number" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" required>
+
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" required>
+                </fieldset>
+
+            
+
+
 
 
         </div>
         <div class="footer">
-
+            <button type="submit">Create Account</button>
+            <div>
+                <p class="login">Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
+
+    </form>
     </div>
     
 

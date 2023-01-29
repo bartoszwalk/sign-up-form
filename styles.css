@@ -2,6 +2,7 @@ body {
     margin: 0%;
     display: flex;
     flex-direction: row;
+    font-family: 'Aboreto', cursive;
 }
 
 .city {
@@ -47,8 +48,8 @@ body {
 
 .header{
     display: flex;
-    height: 35%;
-    background-color: rgb(224, 224, 224);
+    height: 40%;
+    background-color: rgb(240, 240, 240);
     justify-content: center;
     align-items: center;
 }
@@ -56,17 +57,74 @@ body {
 .main{
     display: flex;
     background-color: rgb(255, 255, 255);
-    height:30%
+    height:20%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer{
     display: flex;
-    background-color: rgb(224, 224, 224);
-    height: 35%;
+    background-color: rgb(240, 240, 240);
+    height: 40%;
+    flex-direction: column;
 }
 
-p {
+.header-text {
     margin: 100px 50px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+label {
+    display: block;
+    font-size: 1.1rem;
+}
+input {
+    margin: 0px 20px;
+    border-color: #E5E7EB;
+    border-radius: 5px;
+}
+
+button {
+    height: 50px;
+    width: 225px;
+    margin: 50px;
+    background-color: rgb(211, 195, 123);
+    border-radius: 10px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.login {
+    font-size: 1;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+input:invalid {
+    background-color: rgb(255, 188, 188);
+}
+
+input:focus {
+    border-color: rgb(211, 195, 123);
+    outline: none;
+}
+
+span {
+    color: white;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
 }
